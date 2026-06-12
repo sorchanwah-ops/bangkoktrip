@@ -597,7 +597,88 @@
             evt.currentTarget.classList.add("active");
             
             // 滾動頁面到頂部，優化使用者體驗
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bangkok Food Diary 🍽️</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 { text-align: center; color: #d35400; margin-bottom: 30px; }
+        .food-item { 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            padding: 25px; 
+            margin-bottom: 30px; 
+            border: 1px solid #eee;
+        }
+        h2 { color: #2c3e50; margin-top: 0; font-size: 1.5rem; }
+        p { margin: 8px 0; }
+        strong { color: #e67e22; }
+        .map-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .map-btn:hover { background-color: #2980b9; }
+        .food-img { 
+            width: 100%; 
+            max-height: 380px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-top: 15px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Bangkok Food Diary 🍜🇹🇭</h1>
+    <p style="text-align: center; color: #7f8c8d;">A visual guide to the most incredible spots I tried during my trip!</p>
+
+    <!-- Food Spot 1 -->
+    <div class="food-item">
+        <h2>🦀 Spot 1: Jay Fai (Michelin Star Street Food)</h2>
+        <p><strong>Address:</strong> 327 Maha Chai Rd, Samran Rat, Phra Nakhon, Bangkok 10200</p>
+        <p><strong>What to eat:</strong> The legendary crispy Crab Omelette! It is massive, shaped like a golden log, and tightly packed with chunks of fresh, sweet lump crab meat cooked over charcoal fires.</p>
+        
+        <a href="https://maps.app.goo.gl/vSg4b5L6bQ4w7F9E8" target="_blank" class="map-btn">📍 Open in Google Maps</a>
+        
+        <!-- Live image of Jay Fai's cooking and crab omelette -->
+        <img src="https://live.staticflickr.com/65535/51445510193_d0b6fdcf6c_b.jpg" class="food-img" alt="Jay Fai Crab Omelette">
+    </div>
+
+    <!-- Food Spot 2 -->
+    <div class="food-item">
+        <h2>🍛 Spot 2: Jek Pui Curry (Chinatown Stool Curry)</h2>
+        <p><strong>Address:</strong> 25 Mangkon Rd, Pom Prap, Pom Prap Sattru Phai, Bangkok 10100</p>
+        <p><strong>What to eat:</strong> Authentic Thai Yellow Pork Curry or Beef Curry over rice. There are no tables here—you literally line up, grab your plate, and eat while sitting on a red plastic stool on the busy sidewalk!</p>
+        
+        <a href="https://maps.app.goo.gl/vJb3zR24y2p2C5qL9" target="_blank" class="map-btn">📍 Open in Google Maps</a>
+        
+        <!-- Live image representing authentic Bangkok street curry stand -->
+        <img src="https://live.staticflickr.com/65535/49931757871_4bfba6c710_b.jpg" class="food-img" alt="Jek Pui Street Curry">
+    </div>
+
+</body>
+</html>
         }
     </script>
 </body>
